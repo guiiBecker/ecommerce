@@ -29,6 +29,8 @@ model Product {
   price       Float
   sku         String     @unique
   imageUrl    String
+  size        String
+  color       String
   tags        String[]
   categoryId  Int         // Campo de chave estrangeira simples
   category    Category    @relation(fields: [categoryId], references: [id])  
