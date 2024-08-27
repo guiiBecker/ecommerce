@@ -30,6 +30,14 @@ export class CreateProductDto {
   @IsNotEmpty()
   stock: number;
 
+  @IsString()
+  @IsNotEmpty()
+  size: string;
+
+  @IsString()
+  @IsNotEmpty()
+  color: string;
+
   @IsNotEmpty()
   category: { connect: { id: number } }; // Ajustado para refletir o relacionamento
 }

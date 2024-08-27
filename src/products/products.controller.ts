@@ -20,6 +20,8 @@ export class ProductsController {
         imageUrl: data.imageUrl,
         tags: data.tags,
         stock: data.stock,
+        size: data.size, 
+        color: data.color,
         category: {
           connect: { id: data.category.connect.id }, // Usar o campo de relacionamento
         },
