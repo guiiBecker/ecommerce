@@ -23,7 +23,7 @@ export class ProductsController {
         size: data.size, 
         color: data.color,
         category: {
-          connect: { id: data.category.connect.id }, // Usar o campo de relacionamento
+          connect: { id: data.category.connect.id }, 
         },
       },
     });

@@ -39,5 +39,5 @@ export class CreateProductDto {
   color: string;
 
   @IsNotEmpty()
-  category: { connect: { id: number } }; // Ajustado para refletir o relacionamento
+  category: { connect: { id: number } }; 
 }

@@ -12,7 +12,6 @@ import {
     }
   
 
-// tratamento de erro, o guia não desenvolveu essa parte aqui   
     handleRequest(err, user) {
       if (err || !user) {
         throw new UnauthorizedException(err?.message);
